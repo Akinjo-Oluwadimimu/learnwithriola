@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riola</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+     <link rel="stylesheet" href="../css/quizstyle.css"> 
+	 <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+       
+<!-- header section starts  -->
+<header>
+    <a href="../index.html" class="logo"><i class="fas fa-laptop"></i>riola.</a>
+
+    <nav class="navbar">
+		<a href="../index.html">home</a>
+		<a href="lectures.html">lectures</a>
+		<a class="active" href="">games</a>
+        <a href="reading-1.html">reading</a>
+		<a href="writing-1.html">writing</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+    </div>
+</header>
+<!-- header section ends-->
+
+<!-- search form  -->
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<br><br><br><br>
+
+<section class="more" id="games">
+    <h3 class="sub-heading"> Quizzes </h3>
+    <h1 class="heading"> Practice makes perfect </h1>
+    <div class="row">
+        <div class="content">
+            <p id= "guide">All Riola quizzes are centered on the learning scope of the learning platform. The quizzes are aimed to further improve your vocabulary, pronunciation and broaden your knowledge and comprehension skills.</p>
+            <p>There are fifteen levels in this learning process, which are centered around the reading, listeniing and writing sections of the learning platform.</p>
+            <p>To begin playing the game, click on the Start Quiz button below.</p>
+			<p>The rules and guide for the quizzes will be clearly stated upon starting of the game.</p>
+			<p>Pay attention to the instruction, read the questions carefully and most importantly, make sure to relax and learn!</p>
+			<p>Best of luck!</p>
+        </div>
+	</div>
+<!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> to answer each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once timer goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">6. There are 15 levels which are based of the fifteen Lessons. Each level has a total of 5 questions.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+	
+	<div class="level_box">
+        <div class="level-title"><span>Select a Level</span></div>
+        <div class="level-list-buttons">
+            <button class="level level1">1</button>
+            <button class="level level2">2</button>
+			<button class="level level3">3</button>
+			<button class="level level4">4</button>
+			<button class="level level5">5</button>
+        </div>	
+		<div class="level-list-buttons">
+            <button class="level level6">6</button>
+            <button class="level level7">7</button>
+			<button class="level level8">8</button>
+			<button class="level level9">9</button>
+			<button class="level level10">10</button>
+        </div>	
+		<div class="level-list-buttons">
+            <button class="level level11">11</button>
+            <button class="level level12">12</button>
+			<button class="level level13">13</button>
+			<button class="level level14">14</button>
+			<button class="level level15">15</button>
+        </div>	
+	</div>
+	
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+			<button class="next">Next</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="../js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="../js/quizscript.js"></script>
+	
+</section>
+
+<!-- footer section starts  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#games">top</a>
+            <a href="#guide">guide</a>
+        </div>
+
+<div class="box">
+            <h3>suggested links</h3>
+            <a href="../index.html">home</a>
+ <a href="lectures.html">lectures</a>
+            <a href="reading-1.html">reading</a>
+            <a href="writing-1.html">writing</a>
+            <a href="poems.html">poems</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a>+86-15140244693</a>
+            <a>motolanioluwadabira@gmail.com</a>
+            <a>oluwadimimuakinjo@yahoo.com</a>
+            <a>Shenyang, China </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="http://facebook.com">facebook</a>
+            <a href="http://twitter.com">twitter</a>
+            <a href="http://instagram.com">instagram</a>
+            <a href="http://linkedin.html">linkedin</a>
+        </div>
+    </div>
+    <div class="credit"> copyright &copy; @2021 by <span>mutu mutu bim</span> </div>
+</section>
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
